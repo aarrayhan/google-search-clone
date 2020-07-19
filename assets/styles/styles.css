@@ -46,7 +46,7 @@ ul , .right-bar {
 }
 
 .app-icon {
-    background-image: url(/assets/img/google-icons.png);
+    background-image: url(assets/img/google-icons.png);
     height: 33px;
     width: 33px;
     background-position: -130px -37px;
