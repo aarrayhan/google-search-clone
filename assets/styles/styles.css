@@ -1,3 +1,8 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: #222;
     margin: 0;
@@ -9,13 +14,14 @@ body {
 .topbar {
     display: flex;
     padding-top: 15px;
-    align-items: center;
-    min-width: 980px;
+    align-items: flex-end;
+    min-width: 1280px;
     width: 100%;
     justify-content: space-between;
+    background-color: white;
 }
 
-ul , .right-bar {
+.right-bar {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -72,7 +78,7 @@ ul , .right-bar {
 
 .search-bar {
     display: flex;
-    width: 665px;
+    min-width: 665px;
     border-width: 1px;
     border-style: solid;
     border-color: #dfe1e5;
@@ -126,3 +132,115 @@ ul , .right-bar {
     cursor: pointer;
 }
 
+.button-bar {
+    display: flex;
+    width: 100%;
+    border-bottom-color: rgb(235, 235, 235);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 56px;
+    color: #666;
+    font-size: 13px;
+    align-items: baseline;
+    min-width: 1280px;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.left-btn-br {
+    display: flex;
+    min-width: 700px;
+    align-items: baseline;
+}
+
+.left-btn-br > li > a {
+    padding: 28px 12px 12px 10px;
+    height: 16px;
+}
+
+li > a {
+    text-decoration: none;
+    color: #666;
+}
+
+.right-btn-br {
+    display: flex;
+    align-items: baseline;
+}
+
+.settings {
+    padding: 26px 12px 12px 10px;
+}
+
+.search-all {
+    border-bottom: 3px solid #1A73E8;
+    color: #1A73E8;
+    padding: 20px 12px 12px 10px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 180px;
+}
+
+.tools {
+    padding: 8px 11px;
+}
+
+.tools:hover {
+    
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border-radius: 2px;
+    line-height: 10px;
+    cursor: pointer;
+    margin: 0 0 0 -1px;
+    padding: 8px 11px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.result-stat {
+    margin-left: 180px;
+    font-size: 14px;
+    line-height: 43px;
+    color: #70757a;
+}
+
+.snippet {
+    margin-left: 180px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dfe1e5;
+    box-shadow: none;
+    border-radius: 10px;
+    height: auto;
+    width: 630px;
+}
+
+.snippet-img {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    overflow: hidden;
+}
+
+.snippet-img > img {
+    padding: 4px 0 0 4px;
+    border-radius: 3px;
+}
+
+.snippet-txt {
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.snippet-txt > ol {
+    padding-left: 17px;
+    padding-top: 10px;
+}
